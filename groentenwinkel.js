@@ -74,10 +74,8 @@ function getData() {
 function berekenTotaal() {
     let totaal = 0;
     document.getElementById('footer').hidden = false;
-    console.log(array)
 
     for (var i = 0; i < array.length; i++) {
-        console.log(array[i].aantal * array[i].prijs)
         array[i].aantal != 0 ? totaal += array[i].prijs * array[i].aantal: '';
     }
 
